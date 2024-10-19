@@ -1,0 +1,242 @@
+/* Estilos globais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #555;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Menu de Navegação */
+.menu {
+    background-color: #2b2b2b;
+    padding: 15px 0;
+    box-shadow: 0px 0px 10px rgba(176, 176, 176, 0.5);
+}
+
+.menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .marca {
+    color: #dea521;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu .lista-links {
+    list-style: none;
+    display: flex;
+}
+
+.menu .lista-links li {
+    margin-left: 20px;
+}
+
+.menu .lista-links a {
+    color: #dea521;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu .lista-links a:hover {
+    color: #f4f4f4;
+}
+
+/* Seção Principal */
+.secao-principal {
+    background: linear-gradient(rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)), url('banner.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.secao-principal h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #dea521;
+}
+
+.secao-principal p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.caixa-logo {
+    margin: 40px auto;
+}
+
+.imagem-logo {
+    width: 120px;
+    height: auto;
+}
+
+.botao-primario {
+    background-color: #dea521;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botao-primario:hover {
+    background-color: #eaa734;
+}
+
+/* Seção Propósito */ /* Seção Sobre */
+.secao-proposito {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #555;
+}
+
+.secao-proposito h2 {
+    color: #222;
+}
+
+.secao-proposito p {
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Seção Funcionalidades */
+.secao-funcionalidades {
+    background-color: #555;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.secao-funcionalidades h2 {
+    color: #222; /* Azul bebê */
+}
+
+.grade-funcionalidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.item-funcionalidade {
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para garantir a visibilidade */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: #000; /* Texto preto para contraste */
+}
+
+.item-funcionalidade i {
+    font-size: 40px;
+    color: #dea521;
+    margin-bottom: 20px;
+}
+
+.item-funcionalidade h3, .item-funcionalidade p {
+    color: #000; /* Texto em preto para garantir visibilidade */
+    margin: 10px 0;
+}
+
+/* Seção Equipe */
+.secao-equipe {
+    background-color: #555;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.secao-equipe h2 {
+    color: #222; /* Azul bebê */
+}
+
+.grade-equipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.membro-equipe {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.membro-equipe i {
+    font-size: 40px;
+    color: #dea521;
+    margin-bottom: 20px;
+}
+
+.membro-equipe h3, .membro-equipe p {
+    color: #000;
+}
+
+/* Seção Inscrição */
+.secao-inscricao {
+    background-color: #555;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.secao-inscricao h2,
+.secao-inscricao p {
+    color: white;
+}
+
+.botao-secundario {
+    background-color: #dea521;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botao-secundario:hover {
+    background-color: #eaa734;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 50px;
+}
+
+.rodape p {
+    color: rgb(255, 255, 255);
+}
