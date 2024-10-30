@@ -37,6 +37,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap; /* Garante que o conteúdo não quebre em uma nova linha */
+    padding: 0 20px; /* Aumenta o espaçamento lateral */
 }
 
 .menu .marca {
@@ -49,10 +51,13 @@ p {
 .menu .lista-links {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* Garante que o menu não quebre para uma nova linha */
 }
 
 .menu .lista-links li {
-    margin-left: 20px;
+    margin-left: 10px; /* Reduz a margem entre os itens para caber melhor */
 }
 
 .menu .lista-links a {
@@ -69,7 +74,7 @@ p {
 .secao-principal {
     background: linear-gradient(rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)), url('banner.jpg') no-repeat center center;
     background-size: cover;
-    padding: 50px 0;
+    padding: 50px 20px; /* Ajuste para dar mais respiro */
     text-align: center;
     color: #fff;
 }
@@ -112,7 +117,7 @@ p {
 
 /* Seção Propósito */ /* Seção Sobre */
 .secao-proposito {
-    padding: 30px 0;
+    padding: 30px 20px; /* Ajuste para dar mais respiro */
     text-align: center;
     background-color: #555;
 }
@@ -132,7 +137,7 @@ p {
 /* Seção Funcionalidades */
 .secao-funcionalidades {
     background-color: #555;
-    padding: 50px 0;
+    padding: 50px 20px; /* Ajuste para dar mais respiro */
     text-align: center;
 }
 
@@ -168,7 +173,7 @@ p {
 /* Seção Equipe */
 .secao-equipe {
     background-color: #555;
-    padding: 20px 0;
+    padding: 20px 20px; /* Ajuste para dar mais respiro */
     text-align: center;
 }
 
@@ -203,7 +208,7 @@ p {
 .secao-inscricao {
     background-color: #555;
     color: white;
-    padding: 30px 0;
+    padding: 30px 20px; /* Ajuste para dar mais respiro */
     text-align: center;
     margin-top: 50px;
 }
@@ -239,4 +244,62 @@ p {
 
 .rodape p {
     color: rgb(255, 255, 255);
+}
+
+/* Tornar o layout responsivo com media queries */
+@media (max-width: 768px) {
+    /* Ajustes no menu para dispositivos móveis */
+    .menu .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu .lista-links {
+        flex-direction: row; /* Força os links a permanecerem em uma linha */
+    }
+
+    .menu .lista-links li {
+        margin-left: 10px;
+    }
+
+    /* Ajuste de fonte dos links do menu no mobile */
+    .menu .lista-links a {
+        font-size: 10px; /* Diminui um pouco o tamanho da fonte */
+    }
+
+    /* Ajustes na seção de funcionalidades para dispositivos móveis */
+    .grade-funcionalidades {
+        grid-template-columns: 1fr; /* Tornar as colunas uma única por linha */
+        gap: 20px;
+    }
+
+    .item-funcionalidade {
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Ajustes na seção da equipe para dispositivos móveis */
+    .grade-equipe {
+        grid-template-columns: 1fr; /* Uma única coluna */
+        gap: 20px;
+    }
+
+    .membro-equipe {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .secao-principal h1 {
+        font-size: 36px;
+    }
+
+    .secao-principal p {
+        font-size: 18px;
+    }
+
+    .botao-primario, .botao-secundario {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }
