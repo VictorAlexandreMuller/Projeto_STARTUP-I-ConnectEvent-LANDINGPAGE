@@ -37,8 +37,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap; /* Garante que o conteúdo não quebre em uma nova linha */
-    padding: 0 20px; /* Aumenta o espaçamento lateral */
+    flex-wrap: nowrap;
+    padding: 0 20px;
 }
 
 .menu .marca {
@@ -53,11 +53,11 @@ p {
     display: flex;
     margin: 0;
     padding: 0;
-    flex-wrap: nowrap; /* Garante que o menu não quebre para uma nova linha */
+    flex-wrap: nowrap;
 }
 
 .menu .lista-links li {
-    margin-left: 10px; /* Reduz a margem entre os itens para caber melhor */
+    margin-left: 10px;
 }
 
 .menu .lista-links a {
@@ -74,7 +74,7 @@ p {
 .secao-principal {
     background: linear-gradient(rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)), url('banner.jpg') no-repeat center center;
     background-size: cover;
-    padding: 50px 20px; /* Ajuste para dar mais respiro */
+    padding: 50px 20px;
     text-align: center;
     color: #fff;
 }
@@ -115,9 +115,9 @@ p {
     background-color: #eaa734;
 }
 
-/* Seção Propósito */ /* Seção Sobre */
+/* Seção Propósito */
 .secao-proposito {
-    padding: 30px 20px; /* Ajuste para dar mais respiro */
+    padding: 30px 20px;
     text-align: center;
     background-color: #555;
 }
@@ -137,12 +137,12 @@ p {
 /* Seção Funcionalidades */
 .secao-funcionalidades {
     background-color: #555;
-    padding: 50px 20px; /* Ajuste para dar mais respiro */
+    padding: 50px 20px;
     text-align: center;
 }
 
 .secao-funcionalidades h2 {
-    color: #222; /* Azul bebê */
+    color: #222;
 }
 
 .grade-funcionalidades {
@@ -153,10 +153,10 @@ p {
 
 .item-funcionalidade {
     padding: 20px;
-    background-color: #fff; /* Fundo branco para garantir a visibilidade */
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    color: #000; /* Texto preto para contraste */
+    color: #000;
 }
 
 .item-funcionalidade i {
@@ -166,19 +166,19 @@ p {
 }
 
 .item-funcionalidade h3, .item-funcionalidade p {
-    color: #000; /* Texto em preto para garantir visibilidade */
+    color: #000;
     margin: 10px 0;
 }
 
 /* Seção Equipe */
 .secao-equipe {
     background-color: #555;
-    padding: 20px 20px; /* Ajuste para dar mais respiro */
+    padding: 20px 20px;
     text-align: center;
 }
 
 .secao-equipe h2 {
-    color: #222; /* Azul bebê */
+    color: #222;
 }
 
 .grade-equipe {
@@ -208,7 +208,7 @@ p {
 .secao-inscricao {
     background-color: #555;
     color: white;
-    padding: 30px 20px; /* Ajuste para dar mais respiro */
+    padding: 30px 20px;
     text-align: center;
     margin-top: 50px;
 }
@@ -233,6 +233,69 @@ p {
     background-color: #eaa734;
 }
 
+/* Seção Contato */
+.secao-contato {
+    background-color: #555;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px; /* Ajuste para dar mais espaço entre Inscrição e Contato */
+}
+
+.frase-centralizada {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(255, 255, 255); /* Cor da fonte em vermelho */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para o formulário na seção de contato */
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-contato input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-contato button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.form-contato button:hover {
+    background-color: #ffffff;
+}
+
+.form-rodape {
+    font-size: 12px;
+    color: #eaa734;
+    text-align: center;
+    margin-top: 10px;
+}
+
 /* Rodapé */
 .rodape {
     background-color: #222;
@@ -248,7 +311,6 @@ p {
 
 /* Tornar o layout responsivo com media queries */
 @media (max-width: 768px) {
-    /* Ajustes no menu para dispositivos móveis */
     .menu .container {
         flex-direction: row;
         justify-content: space-between;
@@ -256,38 +318,20 @@ p {
     }
 
     .menu .lista-links {
-        flex-direction: row; /* Força os links a permanecerem em uma linha */
+        flex-direction: row;
     }
 
     .menu .lista-links li {
         margin-left: 10px;
     }
 
-    /* Ajuste de fonte dos links do menu no mobile */
     .menu .lista-links a {
-        font-size: 10px; /* Diminui um pouco o tamanho da fonte */
+        font-size: 10px;
     }
 
-    /* Ajustes na seção de funcionalidades para dispositivos móveis */
-    .grade-funcionalidades {
-        grid-template-columns: 1fr; /* Tornar as colunas uma única por linha */
+    .grade-funcionalidades, .grade-equipe {
+        grid-template-columns: 1fr;
         gap: 20px;
-    }
-
-    .item-funcionalidade {
-        text-align: center;
-        padding: 15px;
-    }
-
-    /* Ajustes na seção da equipe para dispositivos móveis */
-    .grade-equipe {
-        grid-template-columns: 1fr; /* Uma única coluna */
-        gap: 20px;
-    }
-
-    .membro-equipe {
-        text-align: center;
-        padding: 15px;
     }
 
     .secao-principal h1 {

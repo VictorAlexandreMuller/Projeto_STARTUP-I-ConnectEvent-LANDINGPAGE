@@ -1,1 +1,1 @@
-# Projeto_STARTUP-I-ConnectEvent-LANDINGPAGE
+# Connectevent
